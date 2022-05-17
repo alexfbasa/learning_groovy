@@ -1,5 +1,5 @@
 package classes
-
+//Classe sem construtor
 class Cliente {
     String nome
     Date data
