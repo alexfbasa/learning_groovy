@@ -1,0 +1,72 @@
+Double Shift
+
+Search Everywhere
+Quickly find any file, action, symbol, tool window, or setting in IntelliJ IDEA, in your project, and in the current Git repository.
+///////////////////////////////////////////////////////////////////
+Ctrl+Shift+A
+Find Action
+Find a command and execute it, open a tool window, or search for a setting.
+///////////////////////////////////////////////////////////////////
+Alt+Enter
+Show Context Actions
+Quick-fixes for highlighted errors and warnings, intention actions for improving and optimizing your code.
+///////////////////////////////////////////////////////////////////
+F2
+Navigate between code issues
+Shift+F2
+Jump to the next or previous highlighted error.
+///////////////////////////////////////////////////////////////////
+Ctrl+E
+View recent files
+Select a recently opened file from the list.
+///////////////////////////////////////////////////////////////////
+Ctrl+Shift+Enter
+Complete Current Statement
+Insert any necessary trailing symbols and put the caret where you can start typing the next statement.
+///////////////////////////////////////////////////////////////////
+Ctrl+Alt+L
+Reformat Code
+
+Reformat the whole file or the selected fragment according to the current code style settings.
+
+Ctrl+Alt+Shift+T
+
+Invoke refactoring
+
+Refactor the element under the caret, for example, safe delete, copy, move, rename, and so on.
+
+Ctrl+W
+
+Ctrl+Shift+W
+
+Extend or shrink selection
+
+Increase or decrease the scope of selection according to specific code constructs.
+
+Ctrl+/
+
+Ctrl+Shift+/
+
+Add/remove line or block comment
+
+Comment out a line or block of code.
+
+Ctrl+B
+
+Go To Declaration
+
+Navigate to the initial declaration of the instantiated class, called method, or field.
+
+Alt+F7
+
+Find Usages
+
+Show all places where a code element is used across your project.
+
+Alt+1
+
+Focus the Project tool window
+
+Escape
+
+Focus the editor
