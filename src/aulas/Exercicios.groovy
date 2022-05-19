@@ -1,7 +1,10 @@
 package aulas
 
 import classes.Cliente
+import classes.Cliente as Xu
 import classes.Produto
+import classes.Venda
+
 // Criando um Alias para o Test como T
 import org.junit.jupiter.api.Test as T
 
@@ -49,6 +52,31 @@ class Exercicios {
         println p.nome
         p.valor = 8.00
         println p.nome + " " + p.valor
+    }
+    @T
+    void exercicio5() {
+        Xu c = new Xu(nome: "Winderson")
+        println c.getNome()
+    }
+    @T
+    void exercicio6() {
+        Venda v1 = new Venda()
+        def compra1 = v1.vender(100.00, 20)
+        println compra1
+        def compra2 = v1.vender(100)
+        println compra2
+    }
+    @T
+    void exercicio7() {
+        List<String> colecao = new ArrayList()
+        colecao.add("Alexandre")
+        colecao.add(null)
+        colecao.add("Maria")
+        colecao.add("Fernanda")
 
+        println colecao
+
+        colecao = colecao*.toUpperCase()
+        println colecao
     }
 }
