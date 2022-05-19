@@ -1,7 +1,7 @@
 package aulas
 
 import classes.Cliente
-import org.testng.annotations.Test
+import org.junit.jupiter.api.Test
 
 class Exercicios {
 
@@ -35,5 +35,7 @@ class Exercicios {
         println c.getNome() + " " + c.getData()
         Cliente d = new Cliente(nome: "Marcelo")
         Cliente f = new Cliente(data: new Date())
+
+
     }
 }
