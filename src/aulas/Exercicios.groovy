@@ -39,6 +39,7 @@ class Exercicios {
 
         d["nome"] = "MariLuz"
 
+
         println d.getNome()
     }
 }
