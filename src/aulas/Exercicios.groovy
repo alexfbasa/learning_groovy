@@ -33,7 +33,12 @@ class Exercicios {
     void exercicio3() {
         Cliente c = new Cliente(nome: "Alexandre", data: new Date())
         println c.getNome() + " " + c.getData()
+
         Cliente d = new Cliente(nome: "Marcelo")
         Cliente f = new Cliente(data: new Date())
+
+        d["nome"] = "MariLuz"
+
+        println d.getNome()
     }
 }
