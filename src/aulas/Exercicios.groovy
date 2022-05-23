@@ -2,15 +2,19 @@ package aulas
 
 import classes.Cliente
 import classes.Cliente as Xu
+import classes.Funcionario
+import classes.Funcionario_2
 import classes.Produto
+import classes.Somar
 import classes.Venda
 
 // Criando um Alias para o Test como T
 import org.junit.jupiter.api.Test as T
+import org.junit.jupiter.api.Test
 
 class Exercicios {
 
-    @T
+    @Test
     void exercicio1ponto1() {
         def nome = "Alexandre"
         def number = 18
@@ -79,4 +83,69 @@ class Exercicios {
         colecao = colecao*.toUpperCase()
         println colecao
     }
+    @Test
+    void exercicio8(){
+        Somar soma = new Somar()
+        println soma.soma(10)
+        println soma.soma(10,20)
+        println soma.soma(10,20,30)
+
+    }
+    @Test
+    void exercicio9(){
+        URL url = new URL("http://www.google.com.br")
+        println url
+    }
+    @T
+    void exercicio10(){
+        Funcionario f = new Funcionario(nome: "Alexandre", idade: 38, salario: 1500.59)
+        println f
+    }
+    @T
+    void exercicio11(){
+        Funcionario_2 f1 = new Funcionario_2(nome: "Alex", idade: 15, salario: 10)
+        Funcionario_2 f2 = new Funcionario_2(nome: "Alex", idade: 15, salario: 10)
+        Funcionario_2 f3 = new Funcionario_2(nome: "Alexandre", idade: 25, salario: 10)
+        println f1.equals(f2)
+        println f2.equals(f1)
+        println f1.equals(f3)
+        println f2.equals(f3)
+    }
+    @T
+    void exercicio12(){
+        def funcionario = new Funcionario(nome: "Usando o Def", idade: 10, salario: 20)
+        println funcionario
+        funcionario = 10
+        println funcionario
+    }
+    @T
+    void exercicio13(){
+        def colecao = new ArrayList<String>()
+        colecao.add("Basilio")
+        colecao.add("Alexandre")
+        colecao.add("Ferreira")
+        colecao.add(38)
+        //For dinamico
+        for (meuNome in colecao){
+            println meuNome
+        }
+        // Passando um String para a colecao
+        colecao = "Alexandre esta estudando"
+        for (imprimir in colecao)
+            println imprimir
+
+    }
+    @T
+    void exercicio14(){
+        // Closure eh um metodo dinamico, durante a criacao, voce abre e fecha a closure para
+        // executar uma determinada funcao
+        def metodo = {v1 , v2 -> v1 + v2}
+        println metodo (30 , 50)
+        println metodo(5.0, 10)
+    }
+//    public int metodo(v1, v2){
+//        v1 + v2
+//    }
+
+
 }
