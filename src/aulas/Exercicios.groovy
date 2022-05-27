@@ -5,6 +5,7 @@ import classes.Cliente as Xu
 import classes.Funcionario
 import classes.Funcionario_2
 import classes.Produto
+import classes.Relatorio
 import classes.Somar
 import classes.Venda
 
@@ -146,6 +147,42 @@ class Exercicios {
 //    public int metodo(v1, v2){
 //        v1 + v2
 //    }
+    @T
+    void exercicio15(){
+        def imprimir = {v -> String temp = v.trim().replace("a","@")
+            temp = temp.toUpperCase()
+            temp
+        }
 
+        println imprimir("Aleatoriamente")
+        println imprimir("Macarrao")
+    }
+    @T
+    void exercicio16(){
+        def matematicas = {v1, v2, v3 -> (v1+v2)* v3}
+        println matematicas(10, 20, 4)
+    }
+    @T
+    void exercicio17(){
+        def limpandoTexto = {String t -> String tmp = t.trim().replace("Alexandre", "Alex")
+        tmp = tmp.toUpperCase()
+        //return
+        tmp
+        }
+        println limpandoTexto("Alexandre")
 
+        def voltandoMinuscula = { String y -> String t2 = y.trim().replace("a", "\nabobora")
+        t2 = t2.toLowerCase()
+        t2
+        }
+        println voltandoMinuscula("alexandre")
+
+    }
+    @Test
+    void exercicio18(){
+        def funcaoIndeterminada = {texto -> texto.trim().replace("a", "@").replace(" ", "")}
+        Relatorio rel = new Relatorio()
+        rel.emitir("A l e x a n d r e ", funcaoIndeterminada)
+
+    }
 }
