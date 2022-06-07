@@ -1,9 +1,10 @@
 package classes
 
 class Somar {
-    double soma(double[] valores){
-        double rs = 0
-        for(double v: valores){
+    // Criando um array
+    def soma(double[] valores) {
+        def rs = 0
+        for (double v : valores) {
             rs += v
         }
         rs
